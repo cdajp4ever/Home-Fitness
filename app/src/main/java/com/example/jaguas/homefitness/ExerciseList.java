@@ -17,6 +17,8 @@ import android.widget.Toast;
 
 public class ExerciseList extends AppCompatActivity {
 
+    // TEST COMMIT AND PUSH
+
     private String[] kinds = {"Belly", "Back", "Chest", "Arms", "Legs"};
     private String[] belly = {"Crunchers", "Reverse Crunchers", "Flutter Kicks", "Sitting Twists", "Knee to Elbow"};
     private String[] back = {"Reverse Snow Angels", "Superman", "Hip Hinge", "Flying Passe", "Twister"};
