@@ -1,0 +1,8 @@
+<resources>
+
+<string name="app_name">Home-Fitness</string>
+<string name="start">START</string>
+<string name="go_to_choose_exercise">Go To Choose Exercise</string>
+<string name="introduction">Introduction</string>
+
+</resources>
