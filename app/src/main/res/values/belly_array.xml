@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="belly">
+        <item>Crunches</item>
+        <item>Reverse Crunches</item>
+        <item>Flutter Kicks</item>
+        <item>Sitting Twists</item>
+        <item>Knee to Elbow</item>
+    </string-array>
+</resources>

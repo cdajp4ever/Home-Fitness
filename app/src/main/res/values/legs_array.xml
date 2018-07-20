@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="legs">
+        <item>Single-Leg Circle</item>
+        <item>Squat Jump</item>
+        <item>Side Lunge</item>
+        <item>Single-Leg Hip Raise</item>
+        <item>Alternating Drop Lunge</item>
+    </string-array>
+
+</resources>

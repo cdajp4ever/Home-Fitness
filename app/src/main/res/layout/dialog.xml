@@ -4,54 +4,9 @@
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/one"
-        android:onClick="startExercising"/>
-
-    <TextView
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/two"
-        android:onClick="startExercising"/>
-
-    <TextView
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/three"
-        android:onClick="startExercising"/>
-
-    <TextView
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/four"
-        android:onClick="startExercising"/>
-
-    <TextView
-        android:layout_height="60dp"
-        android:layout_width="match_parent"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/five"
-        android:onClick="startExercising"/>
+<ListView
+    android:id="@+id/dialogLV"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></ListView>
 
 </LinearLayout>

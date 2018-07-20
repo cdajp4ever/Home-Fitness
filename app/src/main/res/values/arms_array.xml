@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arms">
+        <item>Push Ups</item>
+        <item>One-Arm Side Push Up</item>
+        <item>The Windmill</item>
+        <item>The Wave Goodbye</item>
+        <item>Close-grip Push Up</item>
+    </string-array>
+</resources>
