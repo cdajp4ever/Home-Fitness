@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="back">
+        <item>Reverse Snow Angels</item>
+        <item>Superman</item>
+        <item>Hip Hinge</item>
+        <item>Flying Passe</item>
+        <item>Twister</item>
+    </string-array>
+
+</resources>
