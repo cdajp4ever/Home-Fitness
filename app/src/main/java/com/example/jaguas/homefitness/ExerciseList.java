@@ -49,8 +49,7 @@ public class ExerciseList extends AppCompatActivity {
                                     switch (which){
                                         case 0:
 
-                                            //need to check where to put the initial intent and
-                                            // then put the extra to change the recycler view
+
                                     }
                                 }
                             });
