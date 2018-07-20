@@ -23,6 +23,7 @@ public class ExerciseList extends AppCompatActivity {
 
     private String[] kinds = {"Belly", "Back", "Chest", "Arms", "Legs"};
     private TextView pos1, pos2, pos3, pos4, pos5;
+    public static String intentcont = "";
 
     private int[] img = {R.drawable.belly, R.drawable.back, R.drawable.chest, R.drawable.arms,
             R.drawable.legs};
@@ -46,11 +47,20 @@ public class ExerciseList extends AppCompatActivity {
                             .setItems(R.array.belly, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialogInterface, int which) {
+                                    Intent intent = new Intent(getBaseContext(), MainExercise.class);
                                     switch (which){
                                         case 0:
+                                            intent.putExtra(intentcont,"back");
+                                            break;
+                                        case 1:
+                                            intent.putExtra(intentcont,"chest");
+                                            break;
+                                        default:
+                                            break;
 
 
                                     }
+                                    startActivity(intent);
                                 }
                             });
                     AlertDialog dialog = builder.create();
