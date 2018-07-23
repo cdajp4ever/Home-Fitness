@@ -9,7 +9,7 @@
     <ImageView
         android:layout_height="248dp"
         android:layout_width="237dp"
-        app:srcCompat="@android:drawable/alert_dark_frame"
+        app:srcCompat="@drawable/hflogo"
         android:layout_marginTop="56dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"

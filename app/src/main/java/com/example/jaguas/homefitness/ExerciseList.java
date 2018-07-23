@@ -25,7 +25,7 @@ public class ExerciseList extends AppCompatActivity {
     private TextView pos1, pos2, pos3, pos4, pos5;
     public static String intentcont = "";
 
-    private int[] img = {R.drawable.belly, R.drawable.back, R.drawable.chest, R.drawable.arms,
+    private int[] img = {R.drawable.abs, R.drawable.back, R.drawable.chest, R.drawable.arms,
             R.drawable.legs};
 
     @Override
@@ -40,7 +40,6 @@ public class ExerciseList extends AppCompatActivity {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                 if(position == 0) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(ExerciseList.this);
                     builder.setTitle(R.string.selectExecise)
@@ -57,7 +56,6 @@ public class ExerciseList extends AppCompatActivity {
                                             break;
                                         default:
                                             break;
-
 
                                     }
                                     startActivity(intent);
@@ -142,5 +140,4 @@ public class ExerciseList extends AppCompatActivity {
             return convertView;
         }
     }
-
 }
