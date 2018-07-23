@@ -4,5 +4,8 @@
     <string name="go_to_choose_exercise">Go To Choose Exercise</string>
     <string name="introduction">Introduction</string>
     <string name="selectExecise">Select your Exercise</string>
+    <string name="lapzero">Lap: 0</string>
+    <string name="restzero">Break: 0</string>
+    <string name="exerciseDone">You are Done! Pick a new Exercise!</string>
 
 </resources>
