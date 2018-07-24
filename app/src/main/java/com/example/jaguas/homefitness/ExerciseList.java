@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+
 public class ExerciseList extends AppCompatActivity {
 
     private String[] kinds = {"Belly", "Back", "Chest", "Arms", "Legs"};
