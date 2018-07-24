@@ -20,7 +20,7 @@ public class MainExercise extends AppCompatActivity {
     public int resId;
     public int stopbtnimg;
     public int startbtnimg;
-    private int counter = 0;
+    private int counter = 1;
     private TextView work;
     private TextView rest;
     private TextView set;
@@ -67,17 +67,27 @@ public class MainExercise extends AppCompatActivity {
 
     private void timers() {
         if (stopngo) {
-            myLapTimer = new CountDownTimer(3000, 1000) {
+            myLapTimer = new CountDownTimer(30000, 1000) {
                 public void onTick(long millisUntilFinished) {
                     work.setText("Lap: " + millisUntilFinished / 1000);
+                    if (millisUntilFinished / 1000 == 10){
+                        Toast.makeText(MainExercise.this,"Almost there! You can do it!",Toast.LENGTH_SHORT).show();
+                    } else if (millisUntilFinished / 1000 == 3){
+                        Toast.makeText(MainExercise.this,"Keep it up, you are almost there!",Toast.LENGTH_SHORT).show();
+                    } else if (millisUntilFinished / 1000 == 1){
+                        Toast.makeText(MainExercise.this,"Take a break!",Toast.LENGTH_SHORT).show();
+                    }
                 }
 
                 public void onFinish() {
                     work.setText(R.string.lapzero);
-                    myRestTimer = new CountDownTimer(2000, 1000) {
+                    myRestTimer = new CountDownTimer(10000, 1000) {
                         @Override
                         public void onTick(long l) {
                             rest.setText("Break: " + l / 1000);
+                            if ((l / 1000) == 3){
+                                Toast.makeText(MainExercise.this, "Get Ready!", Toast.LENGTH_SHORT).show();
+                            }
                         }
 
                         @Override

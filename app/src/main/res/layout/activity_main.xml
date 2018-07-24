@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout tools:context=".MainActivity"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
 
     <ImageView
-        android:layout_height="248dp"
+        android:id="@+id/imageView"
         android:layout_width="237dp"
-        app:srcCompat="@drawable/hflogo"
-        android:layout_marginTop="56dp"
-        android:layout_centerHorizontal="true"
+        android:layout_height="248dp"
         android:layout_alignParentTop="true"
-        android:id="@+id/imageView"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        app:srcCompat="@drawable/hflogo" />
 
     <Button
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
         android:id="@+id/button_start"
-        android:text="@string/start"
-        android:onClick="start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="110dp"
-        android:layout_alignParentBottom="true"/>
+        android:onClick="start"
+        android:text="@string/start" />
 
 </RelativeLayout>
