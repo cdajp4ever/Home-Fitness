@@ -8,15 +8,17 @@
         android:id="@+id/img_exercise"
         android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="60dp" />
 
     <TextView
         android:id="@+id/text_exercise"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="20dp"
+        android:paddingLeft="1dp"
         android:paddingTop="5dp"
-        android:text="Android sucks"
-        android:textSize="25dp" />
+        android:text="Exercise"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:gravity="center"/>
 
 </LinearLayout>

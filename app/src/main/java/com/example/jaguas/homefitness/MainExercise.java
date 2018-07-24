@@ -28,7 +28,7 @@ public class MainExercise extends AppCompatActivity {
     private boolean stopngo = true;
     private CountDownTimer myLapTimer;
     private CountDownTimer myRestTimer;
-    public View myview;
+    public View myView;
 
 
     @Override
@@ -53,7 +53,7 @@ public class MainExercise extends AppCompatActivity {
 
     public void startBtn(View view) {
 
-        myview = view;
+        myView = view;
         if (counter <= 10){
             timers();
             set.setText("Set: " + counter);
@@ -70,13 +70,7 @@ public class MainExercise extends AppCompatActivity {
             myLapTimer = new CountDownTimer(30000, 1000) {
                 public void onTick(long millisUntilFinished) {
                     work.setText("Lap: " + millisUntilFinished / 1000);
-                    if (millisUntilFinished / 1000 == 10){
-                        Toast.makeText(MainExercise.this,"Almost there! You can do it!",Toast.LENGTH_SHORT).show();
-                    } else if (millisUntilFinished / 1000 == 3){
-                        Toast.makeText(MainExercise.this,"Keep it up, you are almost there!",Toast.LENGTH_SHORT).show();
-                    } else if (millisUntilFinished / 1000 == 1){
-                        Toast.makeText(MainExercise.this,"Take a break!",Toast.LENGTH_SHORT).show();
-                    }
+
                 }
 
                 public void onFinish() {
@@ -85,16 +79,14 @@ public class MainExercise extends AppCompatActivity {
                         @Override
                         public void onTick(long l) {
                             rest.setText("Break: " + l / 1000);
-                            if ((l / 1000) == 3){
-                                Toast.makeText(MainExercise.this, "Get Ready!", Toast.LENGTH_SHORT).show();
-                            }
+
                         }
 
                         @Override
                         public void onFinish() {
                             rest.setText(R.string.restzero);
                             counter++;
-                            startBtn(myview);
+                            startBtn(myView);
                         }
                     }.start();
                 }
