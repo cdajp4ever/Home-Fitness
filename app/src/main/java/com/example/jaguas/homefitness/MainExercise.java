@@ -1,6 +1,7 @@
 package com.example.jaguas.homefitness;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,8 +19,6 @@ public class MainExercise extends AppCompatActivity {
     public static String animationname;
     private ImageView animationimg;
     public int resId;
-    public int stopbtnimg;
-    public int startbtnimg;
     private int counter = 1;
     private TextView work;
     private TextView rest;
@@ -29,6 +28,7 @@ public class MainExercise extends AppCompatActivity {
     private CountDownTimer myLapTimer;
     private CountDownTimer myRestTimer;
     public View myView;
+    private AnimationDrawable animExercise;
 
 
     @Override
@@ -40,13 +40,15 @@ public class MainExercise extends AppCompatActivity {
 
         resId = getResources().getIdentifier(animationname, "drawable", MainActivity.PACKAGE_NAME);
         animationimg = findViewById(R.id.animatioexercise);
-        animationimg.setImageResource(resId);
+        animationimg.setBackgroundResource(resId);
+        animExercise = (AnimationDrawable) animationimg.getBackground();
+        animExercise.start();
+//        animationimg.setImageResource(resId);
         work = findViewById(R.id.lapTimer);
         rest = findViewById(R.id.restTimer);
         set = findViewById(R.id.setCount);
         startStop = findViewById(R.id.startBtn);
-        stopbtnimg = getResources().getIdentifier("stop", "drawable", MainActivity.PACKAGE_NAME);
-        startbtnimg = getResources().getIdentifier("start", "drawable", MainActivity.PACKAGE_NAME);
+
 
 
     }
