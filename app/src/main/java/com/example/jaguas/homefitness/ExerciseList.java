@@ -46,10 +46,19 @@ public class ExerciseList extends AppCompatActivity {
                                     Intent intent = new Intent(getBaseContext(), MainExercise.class);
                                     switch (which){
                                         case 0:
-                                            intent.putExtra(intentcont,"back");
+                                            intent.putExtra(intentcont,"crunches");
                                             break;
                                         case 1:
-                                            intent.putExtra(intentcont,"chest");
+                                            intent.putExtra(intentcont,"reversecrunches");
+                                            break;
+                                        case 2:
+                                            intent.putExtra(intentcont,"flutterkicks");
+                                            break;
+                                        case 3:
+                                            intent.putExtra(intentcont,"sittingtwists");
+                                            break;
+                                        case 4:
+                                            intent.putExtra(intentcont,"kneetoelbow");
                                             break;
                                         default:
                                             break;
@@ -66,7 +75,28 @@ public class ExerciseList extends AppCompatActivity {
                     builder.setTitle(R.string.selectExecise)
                             .setItems(R.array.back, new DialogInterface.OnClickListener() {
                                 @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
+                                public void onClick(DialogInterface dialogInterface, int which) {
+                                    Intent intent = new Intent(getBaseContext(), MainExercise.class);
+                                    switch (which){
+                                        case 0:
+                                            intent.putExtra(intentcont,"reversesnowangels");
+                                            break;
+                                        case 1:
+                                            intent.putExtra(intentcont,"superman");
+                                            break;
+                                        case 2:
+                                            intent.putExtra(intentcont,"hiphinge");
+                                            break;
+                                        case 3:
+                                            intent.putExtra(intentcont,"bridging");
+                                            break;
+                                        case 4:
+                                            intent.putExtra(intentcont,"twister");
+                                            break;
+                                        default:
+                                            break;
+                                    }
+                                    startActivity(intent);
 
                                 }
                             });
@@ -77,8 +107,29 @@ public class ExerciseList extends AppCompatActivity {
                     builder.setTitle(R.string.selectExecise)
                             .setItems(R.array.chest, new DialogInterface.OnClickListener() {
                                 @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
+                                public void onClick(DialogInterface dialogInterface, int which) {
+                                    Intent intent = new Intent(getBaseContext(), MainExercise.class);
+                                    switch (which){
+                                        case 0:
+                                            intent.putExtra(intentcont,"rotational");
+                                            break;
+                                        case 1:
+                                            intent.putExtra(intentcont,"singleleg");
+                                            break;
+                                        case 2:
+                                            intent.putExtra(intentcont,"backext");
+                                            break;
+                                        case 3:
+                                            intent.putExtra(intentcont,"tripush");
+                                            break;
+                                        case 4:
+                                            intent.putExtra(intentcont,"diamond");
+                                            break;
+                                        default:
+                                            break;
 
+                                    }
+                                    startActivity(intent);
                                 }
                             });
                     AlertDialog dialog = builder.create();
@@ -90,8 +141,29 @@ public class ExerciseList extends AppCompatActivity {
                     builder.setTitle(R.string.selectExecise)
                             .setItems(R.array.arms, new DialogInterface.OnClickListener() {
                                 @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
+                                public void onClick(DialogInterface dialogInterface, int which) {
+                                    Intent intent = new Intent(getBaseContext(), MainExercise.class);
+                                    switch (which){
+                                        case 0:
+                                            intent.putExtra(intentcont,"pushups");
+                                            break;
+                                        case 1:
+                                            intent.putExtra(intentcont,"onearmside");
+                                            break;
+                                        case 2:
+                                            intent.putExtra(intentcont,"thewindmill");
+                                            break;
+                                        case 3:
+                                            intent.putExtra(intentcont,"swingarms");
+                                            break;
+                                        case 4:
+                                            intent.putExtra(intentcont,"floordips");
+                                            break;
+                                        default:
+                                            break;
 
+                                    }
+                                    startActivity(intent);
                                 }
                             });
                     AlertDialog dialog = builder.create();
@@ -103,14 +175,33 @@ public class ExerciseList extends AppCompatActivity {
                     builder.setTitle(R.string.selectExecise)
                             .setItems(R.array.legs, new DialogInterface.OnClickListener() {
                                 @Override
-                                public void onClick(DialogInterface dialogInterface, int i) {
+                                public void onClick(DialogInterface dialogInterface, int which) {
+                                    Intent intent = new Intent(getBaseContext(), MainExercise.class);
+                                    switch (which){
+                                        case 0:
+                                            intent.putExtra(intentcont,"singlelegcircule");
+                                            break;
+                                        case 1:
+                                            intent.putExtra(intentcont,"squat");
+                                            break;
+                                        case 2:
+                                            intent.putExtra(intentcont,"sidelunge");
+                                            break;
+                                        case 3:
+                                            intent.putExtra(intentcont,"singleleghip");
+                                            break;
+                                        case 4:
+                                            intent.putExtra(intentcont,"droplunge");
+                                            break;
+                                        default:
+                                            break;
 
+                                    }
+                                    startActivity(intent);
                                 }
                             });
                     AlertDialog dialog = builder.create();
                     dialog.show();
-
-
                 }
             }
         });

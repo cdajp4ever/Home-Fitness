@@ -3,8 +3,8 @@
     <string-array name="chest">
         <item>Rotational press-up</item>
         <item>Single Leg Push Up</item>
-        <item>Wide Push Up</item>
-        <item>Narrow/Tricep Push up</item>
-        <item>Diamond Push up</item>
+        <item>Back Extension</item>
+        <item>Tricep Push Up</item>
+        <item>Diamond Push Up</item>
     </string-array>
 </resources>
