@@ -43,7 +43,6 @@ public class MainExercise extends AppCompatActivity {
         animationimg.setBackgroundResource(resId);
         animExercise = (AnimationDrawable) animationimg.getBackground();
         animExercise.start();
-//        animationimg.setImageResource(resId);
         work = findViewById(R.id.lapTimer);
         rest = findViewById(R.id.restTimer);
         set = findViewById(R.id.setCount);

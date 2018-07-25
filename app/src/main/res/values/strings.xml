@@ -2,10 +2,17 @@
     <string name="app_name">Home-Fitness</string>
     <string name="start">START</string>
     <string name="go_to_choose_exercise">Go To Choose Exercise</string>
-    <string name="introduction">Introduction</string>
     <string name="selectExecise">Select your Exercise</string>
     <string name="lapzero">Lap: 0</string>
     <string name="restzero">Break: 0</string>
     <string name="exerciseDone">You are Done! Pick a new Exercise!</string>
+    <string name="instructions">Introduction</string>
+    <string name="step1">1 - Animation with the exercise</string>
+    <string name="step2">2 - 30 seconds of exercise, this will show the remaining time</string>
+    <string name="step3">3 - 10 seconds of rest, this will show the remaining time</string>
+    <string name="step4">4 - Number of sets completed</string>
+    <string name="step5">5 - Start button, once this is clicked the timer will start</string>
+
+
 
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="instructions">
+        <item> Introduction </item>
+        <item> 1 - Animation with the exercise.</item>
+        <item> 2 - 30 seconds of exercise, this will show the remaining time</item>
+        <item> 3 - 10 seconds of rest, this will show the remaining time</item>
+        <item> 4 - Number of sets completed</item>
+        <item> 5 - Start button, once this is clicked the timer will start</item>
+    </string-array>
+</resources>
