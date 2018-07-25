@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ExerciseList">
+    tools:context=".ExerciseList"
+    android:background="@drawable/background_mainexercise">
 
     <ListView
         android:id="@+id/list_part"
