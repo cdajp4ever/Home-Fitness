@@ -20,7 +20,7 @@ public class MainExercise extends AppCompatActivity {
     public int resId;
     public int stopbtnimg;
     public int startbtnimg;
-    private int counter = 0;
+    private int counter = 1;
     private TextView work;
     private TextView rest;
     private TextView set;
@@ -28,7 +28,7 @@ public class MainExercise extends AppCompatActivity {
     private boolean stopngo = true;
     private CountDownTimer myLapTimer;
     private CountDownTimer myRestTimer;
-    public View myview;
+    public View myView;
 
 
     @Override
@@ -53,7 +53,7 @@ public class MainExercise extends AppCompatActivity {
 
     public void startBtn(View view) {
 
-        myview = view;
+        myView = view;
         if (counter <= 10){
             timers();
             set.setText("Set: " + counter);
@@ -67,24 +67,26 @@ public class MainExercise extends AppCompatActivity {
 
     private void timers() {
         if (stopngo) {
-            myLapTimer = new CountDownTimer(3000, 1000) {
+            myLapTimer = new CountDownTimer(30000, 1000) {
                 public void onTick(long millisUntilFinished) {
                     work.setText("Lap: " + millisUntilFinished / 1000);
+
                 }
 
                 public void onFinish() {
                     work.setText(R.string.lapzero);
-                    myRestTimer = new CountDownTimer(2000, 1000) {
+                    myRestTimer = new CountDownTimer(10000, 1000) {
                         @Override
                         public void onTick(long l) {
                             rest.setText("Break: " + l / 1000);
+
                         }
 
                         @Override
                         public void onFinish() {
                             rest.setText(R.string.restzero);
                             counter++;
-                            startBtn(myview);
+                            startBtn(myView);
                         }
                     }.start();
                 }

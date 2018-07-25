@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="100dp"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="100dp"
+    android:orientation="horizontal">
 
     <ImageView
-        android:layout_height="match_parent"
+        android:id="@+id/img_exercise"
         android:layout_width="100dp"
-        android:layout_marginLeft="10dp"
-        android:id="@+id/img_exercise"/>
+        android:layout_height="match_parent"
+        android:layout_marginLeft="60dp" />
 
     <TextView
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
         android:id="@+id/text_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="1dp"
         android:paddingTop="5dp"
-        android:paddingLeft="20dp"
+        android:text="Exercise"
         android:textSize="25dp"
-        android:text="Android sucks"/>
+        android:textAlignment="center"
+        android:gravity="center"/>
 
 </LinearLayout>
